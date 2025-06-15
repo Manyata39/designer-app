@@ -1,12 +1,53 @@
-# React + Vite
+# 🏡 Interior Designers Listing App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack single-page mobile web app for listing interior designers, built with React + Vite frontend and Flask backend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📂 Project Structure
+/assignment
+├── /src # Frontend (React + Vite)
+├── /server # Backend (Flask)
+├── /public # Vite static files
+├── package.json # Frontend dependencies
+├── vite.config.js
+├── .gitignore
+└── README.md
+---
 
-## Expanding the ESLint configuration
+## 🚀 Setup & Run
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1️⃣ Backend (Flask)
+
+```bash
+cd server
+# (Optional but recommended) Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run server
+python app.py
+
+---
+
+⚠ CORS
+Since the frontend and backend run on different ports, CORS headers are required on the backend.
+Ensure your Flask app includes:
+
+python
+Copy
+Edit
+from flask_cors import CORS
+CORS(app)
+
+✨ Features
+List interior designers with name, rating, tags, and phone numbers
+
+Shortlist functionality
+
+Filter to show shortlisted designers
+
+Mobile-friendly SPA design
