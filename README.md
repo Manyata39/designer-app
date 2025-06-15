@@ -21,7 +21,7 @@ A full-stack single-page mobile web app for listing interior designers, built wi
 
 ```bash
 cd server
-# (Optional but recommended) Create virtual environment
+# Create virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
@@ -30,24 +30,31 @@ pip install -r requirements.txt
 
 # Run server
 python app.py
+```
 
----
+### 2️⃣ Frontend (React + Vite)
+```
+cd ..
+# Install frontend dependencies
+npm install
+
+# Run frontend dev server
+npm run dev
+```
 
 ⚠ CORS
 Since the frontend and backend run on different ports, CORS headers are required on the backend.
 Ensure your Flask app includes:
-
-python
-Copy
-Edit
+```
 from flask_cors import CORS
 CORS(app)
+```
 
-✨ Features
-List interior designers with name, rating, tags, and phone numbers
+### ✨ Features
+- List interior designers with name, rating, tags, and phone numbers
 
-Shortlist functionality
+- Shortlist functionality
 
-Filter to show shortlisted designers
+- Filter to show shortlisted designers
 
-Mobile-friendly SPA design
+- Mobile-friendly SPA design
