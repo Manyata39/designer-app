@@ -45,7 +45,6 @@ const ListingCard = ({ designer, onShortlistToggle, background }) => {
       <div className="w-[1px] bg-[#D7D7D7] my-3"></div>
 
       <div className="w-[100px] flex flex-col items-center h-full justify-center px-2 gap-[40px] ">
-        {/* Ignore Details, Hide, Report */}
         <div className='flex flex-col'>
         <button>
           <img src="/icons/arrow-right-short 1.svg" alt="Details" className="w-23px h-22px" />

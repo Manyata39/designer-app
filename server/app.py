@@ -4,12 +4,11 @@ from data import designers
 
 app = Flask(__name__)
 CORS(app)
-# Get all designers
+
 @app.route('/api/designers', methods=['GET'])
 def get_designers():
     return jsonify(designers)
 
-# Toggle shortlist status
 @app.route('/api/designers/<int:designer_id>/shortlist', methods=['POST'])
 def toggle_shortlist(designer_id):
     for designer in designers:

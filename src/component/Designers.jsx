@@ -41,24 +41,20 @@ function Designers() {
     return (
         <>
             <div className="w-[360px] h-[800px] left-[123px] top-[-2351px] mx-auto border shadow-md overflow-auto bg-[#FFFFFF] ">
-                {/* Header */}
+                
                 <div className="relative w-full pt-4 px-4 h-[72px] bg-white">
-                    {/* Left - Logo */}
+                    
                     <img src="/icons/logo-small 1.svg" alt="Logo" className="absolute left-[20px] top-[21px] w-[31px] h-[31px]" />
 
-                    {/* Center - Heading */}
                     <h1 className="absolute left-[118px] top-[24px] w-[124px] h-[35px] text-center leading-[35px] font-normal text-[24px] tracking-normal font-chivo text-[#716966]">
                         EmptyCup
                     </h1>
 
-                    {/* Right - 3 dots icon */}
                     <img src="/icons/three-dots-vertical 1.svg" alt="More" className="absolute w-[27px] h-[27px] top-[24px] left-[307px]" />
                 </div>
 
-                {/* Divider Line below header */}
                 <div className="w-[360px] border-t border-[#D0D0D0]" style={{ borderWidth: '0.25px' }} />
 
-                {/* Toggle Button */}
                 <div className="relative w-full">
                     <button
                         onClick={() => setShowShortlistedOnly(prev => !prev)}
